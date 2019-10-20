@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+    body, input, button, h3{
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    body{
+        padding: 80px 0 0 0;
+    }
+
+    header{
+        width: 100%;
+        min-height: 50px;
+        position: fixed;
+        display: flex;
+        padding: 10px;
+
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        background: #2F3C7E;
+
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    
+
+    h3{
+        color: #fbeaeb;
+        line-height: 30px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+
+        -webkit-transition: background ease 0.2s;
+        -moz-transition: background ease 0.2s;
+        -ms-transition: background ease 0.2s;
+        -o-transition: background ease 0.2s;
+        transition: background ease 0.2s;
+    }
+
+    h3.headerref:hover{
+        color: #2F3C7E;
+        background: #fbeaeb;
+        cursor: pointer;
+    }
+
+    button.headerbtn{
+        padding: 5px 10px 5px 10px;
+        color: #fbeaeb;
+        font-size: 20px;
+        background: none;
+        border: 0;
+        box-shadow: none;
+        outline: none;
+        cursor: pointer;
+        border-radius:10px;
+
+        -webkit-transition: background ease 0.2s;
+        -moz-transition: background ease 0.2s;
+        -ms-transition: background ease 0.2s;
+        -o-transition: background ease 0.2s;
+        transition: background ease 0.2s;
+    }
+
+    button.headerbtn:hover{
+        /* font-size: 23px; */
+        color: #2F3C7E;
+        background: #fbeaeb;
+    }
+
+    #github{
+        margin-right: auto;
+    }
+
+
+    
