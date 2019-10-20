@@ -33,6 +33,8 @@
         padding: 5px 10px 5px 10px;
         border-radius: 10px;
 
+        font-weight: 500;
+
         -webkit-transition: background ease 0.2s;
         -moz-transition: background ease 0.2s;
         -ms-transition: background ease 0.2s;
@@ -65,7 +67,6 @@
     }
 
     button.headerbtn:hover{
-        /* font-size: 23px; */
         color: #2F3C7E;
         background: #fbeaeb;
     }
