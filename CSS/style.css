@@ -5,7 +5,13 @@
     }
 
     body{
-        padding: 80px 0 0 0;
+        padding: 75px 0 0 0;
+        background: #fbeaeb;
+        color: #2F3C7E;
+    }
+
+    a{
+        text-decoration: none;
     }
 
     header{
@@ -74,6 +80,49 @@
     #github{
         margin-right: auto;
     }
+
+    img{ 
+        width: 200px;
+        height: 200px;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+
+        border: solid 8px #2F3C7E;
+        border-radius: 100px;
+        
+    }
+
+    div.intro-text{
+        min-height: 50px;
+        width: 100%;
+        padding: 10px 20px;
+
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+
+    }
+
+    div.intro-text span.name{
+        font-size: 22px;
+    }
+
+    hr{
+        margin: 10px auto;
+        width: 40%;
+        height: 3px;
+        
+        border:0;
+        background-color: #2F3C7E;
+    }
+
 
 
     
