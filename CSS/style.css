@@ -5,7 +5,7 @@
     }
 
     body{
-        padding: 75px 0 0 0;
+        padding: 70px 0 0 0;
         background: #fbeaeb;
         color: #2F3C7E;
     }
@@ -93,6 +93,10 @@
         border: solid 8px #2F3C7E;
         border-radius: 100px;
         
+    }
+
+    div.introcontainer{
+        margin: 25px 0;
     }
 
     div.intro-text{
