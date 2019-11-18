@@ -2,6 +2,8 @@
 
     html{
         --scroll-padding-top: 70px;
+        --light-color: #f0eaeb;
+        --dark-color: #2F3C7E;
     }
 
     body, input, button, h3{
@@ -12,8 +14,8 @@
         scroll-padding-top: var(--scroll-padding-top);
 
         padding: 70px 0 0 0;
-        background: #fbeaeb;
-        color: #2F3C7E;
+        background: var(--light-color);
+        color: var(--dark-color);
     }
 
     a{
@@ -34,7 +36,7 @@
         left: 0;
         z-index: 10;
 
-        background: #2F3C7E;
+        background: var(--dark-color);
 
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -44,7 +46,7 @@
 
     .navbar{
         height:100%;
-        color: #fbeaeb;
+        color: var(--light-color);
         line-height: 30px;
         padding: 0 10px;
         font-weight: 300;
@@ -59,14 +61,14 @@
     }
 
     a.navbar:hover{
-        color: #2F3C7E;
-        background: #fbeaeb;
+        color: var(--dark-color);
+        background: var(--light-color);
         cursor: pointer;
     }
 
     button.headerbtn{
         padding: 5px 10px 5px 10px;
-        color: #fbeaeb;
+        color: var(--light-color);
         font-size: 20px;
         background: none;
         border: 0;
@@ -83,8 +85,8 @@
     }
 
     button.headerbtn:hover{
-        color: #2F3C7E;
-        background: #fbeaeb;
+        color: var(--dark-color);
+        background: var(--light-color);
     }
 
     #github{
@@ -100,7 +102,7 @@
         margin-right: auto;
         margin-bottom: 15px;
 
-        border: solid 8px #2F3C7E;
+        border: solid 8px var(--dark-color);
         border-radius: 100px;
         
     }
@@ -134,15 +136,15 @@
         height: 3px;
         
         border:0;
-        background-color: #2F3C7E;
+        background-color: var(--dark-color);
     }
 
     #about_line{
-        background-color: #fbeaeb;
+        background-color: var(--light-color);
         width: 20%;
     }
     #project_line{
-        background-color: #2F3C7E;
+        background-color: var(--dark-color);
         width: 20%;
     }
     #project_divider_line{
@@ -158,8 +160,8 @@
     div.about_container{
         width: 100%;
         height: auto;
-        color: #fbeaeb;
-        background: #2F3C7E;
+        color: var(--light-color);
+        background: var(--dark-color);
         position: relative;
         padding: 20px 0;
 
@@ -214,8 +216,8 @@
     div.project_container{
         width: 100%;
         height: auto;
-        color: #2F3C7E;
-        background: #fbeaeb;
+        color: var(--dark-color);
+        background: var(--light-color);
         padding: 20px 0;
         
     }
