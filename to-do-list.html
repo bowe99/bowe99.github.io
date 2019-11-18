@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="Ressources/to-do-css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="Ressources/to-do-css/style.css">
+
+    <title>To-Do List</title>
+</head>
+<body>
+    <header>
+        <input type="text" placeholder="e.g. Fold the laundry" id = "item" onblur = "this.focus()" autofocus>
+        <button id = "add">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve"><polygon points="42,20 22,20 22,0 20,0 20,20 0,20 0,22 20,22 20,42 22,42 22,22 42,22 "/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+
+        </button>
+    </header>
+
+    <div class = "container">
+
+    <!--Uncompleted Tasks-->
+    <ul class = "todo" id="todo"></ul> 
+
+    <!-- Completed Tasks-->
+    <ul class="todo" id="completed"></ul> 
+
+    </div>
+
+
+    
+
+    <footer>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+    <script src="Ressources/to-do-js/main.js"></script>
+</body>
+</html>

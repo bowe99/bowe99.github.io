@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+    body, input, button{
+        font-family: 'Roboto', sans-serif;
+        
+    }
+
+    body{
+        background: #dbf5ff;
+        padding: 80px 0px 0px 0px;
+    }
+
+    header{
+        width:100%;
+        height: 80px;
+        position: fixed;
+        padding: 15px;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        background: #00b7ff;
+        box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    header input{
+        width: 100%;
+        height: 50px;
+        float: left;
+        background: rgba(255, 255, 255, 0.3);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding: 0px 60px 0px 0px;
+
+        font-weight: 400;
+        text-indent: 15px;
+        color : #fff;
+
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+       
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        
+    }
+
+    header input::-webkit-input-placeholder{
+        color: rgba(255, 255, 255, 0.75);
+    }
+    header input:-moz-input-placeholder{
+        color: rgba(255, 255, 255, 0.75);
+    }
+    header input::-moz-input-placeholder{
+        color: rgba(255, 255, 255, 0.75);
+    }
+    header input:-ms-input-placeholder{
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    header button{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 5;
+        border-radius: 25px;
+        background: #fff;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+
+        cursor: pointer;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+
+    }
+
+    header button svg{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -8px 0px 0px -8px;
+    }
+
+    .container{
+        width: 100%;
+        float: left;
+        padding: 15px;
+    }
+
+    ul.todo{
+        width: 100%;
+        float: left;
+
+    }
+
+    ul.todo li{
+        width: 100%;
+        min-height: 50px;
+        float: left;
+
+        font-size: 14px;
+        font-weight: 500;
+        color: #444;
+        line-height: 22px;
+
+        margin: 0px 0px 10px 0px;
+        position: relative;
+        padding: 14px 100px 14px 15px;
+
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);;
+    }
+
+
+
+    ul.todo li:last-of-type{
+        margin: 0px;
+    }
+
+    ul.todo li .buttons{
+        width: 100px;
+        height: 50px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.todo li .buttons button{
+        width: 50px;
+        height: 50px;
+        float: left;
+        position: relative;
+
+        background: none;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+
+        cursor: pointer;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+    }
+
+    ul.todo li .buttons button:last-of-type:before{
+        content: '';
+        width: 1px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        background: #a2aeb3;
+    }
+
+    ul.todo li .buttons button svg{
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -12px 0px 0px -12px;
+
+    }
+
+    ul.todo li .buttons button.complete svg{
+        border-radius: 12px;
+        border: 1.5px solid #00b7ff;
+        
+        -webkit-transition: background 0.2s ease;
+        -moz-transition: background 0.2s ease;
+        -ms-transition: background 0.2s ease;
+        -o-transition: background 0.2s ease;
+        transition:background 0.2s ease;
+    }
+
+    ul.todo#completed li .buttons button.complete svg{
+        border-radius: 12px;
+        border: 1.5px solid #00b7ff;
+        background: #00b7ff;
+        
+    }
+
+    ul.todo li .buttons button.complete svg .fill{
+        fill: #00b7ff;
+    }
+
+    ul.todo#completed li .buttons button.complete svg .fill{
+        fill: #fff;
+    }
+
+    ul.todo:not(#completed) li .buttons button.complete:hover svg{
+        background:rgba(0, 182, 255, 0.75);
+    }
+
+    ul.todo:not(#completed) li .buttons button.complete:hover svg .fill{
+        fill: #fff;
+    }
+
+    ul.todo li .buttons button.complete svg .noFill{
+        fill: none;
+    }
+
+    ul.todo#completed:not(:empty){
+        padding: 60px 0 0 0;
+        position: relative;
+    }
+
+    ul.todo#completed:not(:empty):before{
+        content: '';
+        width: 150px;
+        height: 1px;
+        background: #a2aeb3;
+        position: absolute;
+
+        top: 30px;
+        left: 50%;
+
+        margin: 0 0 0 -75px;
+    }
+
+    /* .remove .removeText{
+        visibility: hidden;
+        width: 80px;
+        background-color: #444;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+
+        top:40px;
+        right: -15px;
+        
+        position: absolute;
+        z-index: 11;
+    }
+
+    .remove:hover .removeText{
+        visibility: visible;
+    } */
+    
+
+    footer{
+        bottom: 0;
+        left: 0;
+        position: fixed;
+    }
+
+
+
+    
+

@@ -127,6 +127,10 @@
     }
 
     div.intro-text span.name{
+        font-size: 26px;
+    }
+
+    span.position{
         font-size: 22px;
     }
 
@@ -189,7 +193,7 @@
 
     div.left_section {
         width: 100%;
-        padding: 0 20px 00 0;
+        padding: 40px 20px 00 0;
         font-size: 18px;
         text-align: justify;
     }
@@ -205,7 +209,7 @@
 
     div.list_content{
         padding-left: 20px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     div.project_content{
@@ -244,6 +248,30 @@
         width: 500px;
 
         display: inline-block;
+    }
+
+    div.contact_container{
+        width: 100%;
+        height: auto;
+        background: var(--dark-color);
+        color: var(--light-color);
+        padding: 20px 0;
+        
+    }
+
+    #contact_line{
+        background-color: var(--light-color);
+        width: 20%;
+    }
+
+    div.contact_content{
+        text-align: center;
+        font-size: 18px;  
+    }
+
+    ul.contact_list{
+        padding: 20px 0 0 0;
+        margin: 0 0 50px 0;
     }
     
 
