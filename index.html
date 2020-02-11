@@ -102,204 +102,323 @@
                 PROJECTS
                 <hr id="project_line">
             </div>
-            <!--Chess-->
+            <!--McHacks Project-->
             <div class="project_item">
                 <div class="left_section">
                     <ul>
                         <li>
-                            <div class="list_title"><strong>Chess (Java)</strong></div>
-                            <div class="project_content">
-                                Created a chess game from scratch and implemented a full GUI.<br>
-                                <br>
-                                <strong>How It Works</strong><br>
-                                Everytime a player selects a piece, it displays all the different possible positions the
-                                piece can be moved taking into consideration
-                                all the restrictions such as, if the move you are trying to make puts you in check or if
-                                their is a piece in the way. Implemented using
-                                Java GUI code and all my code is available at <a
-                                    href="https://github.com/bowe99/Chess-Game" target="_blank">this GitHub
-                                    link.</a><br>
-                                <br>
-                                The video on the right is a demo of the features built in and some gameplay of the game.
-                                All the moves are being stored on the right column
-                                and the taken pieces are stored and displayed in the left column.<br>
-                                <br>
-                                <strong>Concepts Learned</strong><br>
-                                ImmutableLists and List Protection<br>
-                                Java GUI<br>
-                                Class Inheritance and Abstract Classes
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="project_section">
-                    <video controls muted loop>
-                        <source type="video/mp4" src="Ressources/ChessDemo.mp4">
-                    </video>
-                </div>
-            </div>
-            <hr id="project_divider_line">
-            <!--ConU Project-->
-            <div class="project_item">
-                <div class="left_section">
-                    <ul>
-                        <li>
-                            <div class="list_title"><strong>(ConUHacks) 24-Hour Hackathon Project: Break Planner (Flutter)</strong>
+                            <div class="list_title"><strong>(McHacks) 24-Hour Hackathon Project: GreenShare
+                                    (Flutter)</strong>
                             </div>
                             <div class="project_content">
-                                The purpose of this application was to create a platform for people to find activities to do during their school breaks.
-                                The main idea was for users to be able to connect with other people using the app and being able to find common breaks between
-                                them. Then we would recommend different activities based on the time and weather that are nearby. For example, 
-                                if it was near lunchtime, the app would display your next break with people that have breaks at the same time and 
-                                recommend nearby restaurants to go to while on break.<br>
+                                The purpose of this application was to create an app to help people recycle, reuse and
+                                reduce their containers and products.
+                                The main goal was to provide people with the tools to effectively reduce the amount of
+                                waste they produce.
+                                <br>
                                 <br>
                                 <strong>How It Works</strong><br>
-                                We used the Flutter framework to design the UI and the Firebase platform for the backend of the application.
-                                The user is able to connect to their account and add classes to their schedule. Once the class is added it is stored in the Firestore
-                                database. The data is retreived everytime the user logs in to their account. 
-                                Adding a class is as simple as clicking the floating button at the bottom of the screen and filling out the data.
-                                Once added the class will be displayed on the schedule. The app the finds when your next break is going to be
-                                and displays it under the schedule. Followed by the recommendations of activities. We were unable to implement the connection
-                                between people in the 24 hour challenge but our team is planning to finish the app for a more complete look. If you'd like 
-                                to take a look at the code you can click on <a target="_blank" href="https://github.com/bowe99/ConUHacksV-Flutter">this Github link.</a>
+                                We used the Flutter framework to design the UI and the Firebase platform for the backend
+                                of the application. Also using Google's Machine Learning Vision API to detect the
+                                objects or barcodes.<br>
+                                <br>
+                                The user is able to scan a product or a barcode. The barcode will automatically bring
+                                you to a product page while the scanning of a product will return categories from the ML
+                                vision API and it will search through our database for items with the same categories.
+                                For example, if you were to scan a Coca-Cola can the ML vision would recognize the can
+                                as a beverage can and would search through the database to find all items with that
+                                category.<br>
+                                <br>
+                                Once you found your product, the user will be presented with 4 different possible
+                                screens. First, a dashboard with more information about the product that was scanned.
+                                The second tab displays information on how to recycle the packaging of the item or the
+                                item itself. The third screen will be a list of DIY projects that can be done using the
+                                item. Finally, the last screen will present a list of products that are similar to the
+                                item but use less materials. For example, a bottle of shampoo will have links to bar
+                                shampoos that completely get rid of the plastic bottle all together.<br>
+                                <br>
+                                If you'd like
+                                to take a look at the code you can click on <a target="_blank"
+                                    href="https://github.com/bowe99/McHacks">this Github link.</a>
                                 <br>
                                 <br>
                                 <strong>Concepts Learned</strong><br>
-                                Database connections in Flutter <br>
-                                DateTime Widget and how to work with Time <br>
-                                Time management to deploy a prototype in a 24 hour challenge <br>
+                                Machine Learning Vision API <br>
+                                Screen Management in Flutter <br>
+                                Camera implementation<br>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="project_section">
                     <video class="mobile" controls muted loop>
-                        <source type="video/mp4" src="Ressources/ConU.mp4">
+                        <source type="video/mp4" src="Ressources/McHacks.mp4">
                     </video>
                 </div>
             </div>
         </div>
         <hr id="project_divider_line">
-        <!--Personal Finance Tracker-->
+        <!--Chess-->
         <div class="project_item">
             <div class="left_section">
                 <ul>
                     <li>
-                        <div class="list_title"><strong>Mobile Application: Personal Finance Tracker (Flutter)</strong></div>
+                        <div class="list_title"><strong>Chess (Java)</strong></div>
                         <div class="project_content">
-                            This app allows a user to track his personal expenses by keeping a log of all the expenses 
-                            that have been made. It also displays a chart with spending from the last 7 days and displays which 
-                            day of that week was the most expensive.<br>
+                            Created a chess game from scratch and implemented a full GUI.<br>
                             <br>
                             <strong>How It Works</strong><br>
-                            The chart takes in all the transactions in the past 7 days and displays a colored bar over each day
-                            where the height is calculated as a percentage of all transactions for that specific date and is compared to the 
-                            past weeks transactions.<br>
+                            Everytime a player selects a piece, it displays all the different possible positions the
+                            piece can be moved taking into consideration
+                            all the restrictions such as, if the move you are trying to make puts you in check or if
+                            their is a piece in the way. Implemented using
+                            Java GUI code and all my code is available at <a href="https://github.com/bowe99/Chess-Game"
+                                target="_blank">this GitHub
+                                link.</a><br>
                             <br>
+                            The video on the right is a demo of the features built in and some gameplay of the game.
+                            All the moves are being stored on the right column
+                            and the taken pieces are stored and displayed in the left column.<br>
+                            <br>
+                            <strong>Concepts Learned</strong><br>
+                            ImmutableLists and List Protection<br>
+                            Java GUI<br>
+                            Class Inheritance and Abstract Classes
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="project_section">
+                <video controls muted loop>
+                    <source type="video/mp4" src="Ressources/ChessDemo.mp4">
+                </video>
+            </div>
+        </div>
+        <hr id="project_divider_line">
+        <!--ConU Project-->
+        <div class="project_item">
+            <div class="left_section">
+                <ul>
+                    <li>
+                        <div class="list_title"><strong>(ConUHacks) 24-Hour Hackathon Project: Break Planner
+                                (Flutter)</strong>
+                        </div>
+                        <div class="project_content">
+                            The purpose of this application was to create a platform for people to find activities to do
+                            during their school breaks.
+                            The main idea was for users to be able to connect with other people using the app and being
+                            able to find common breaks between
+                            them. Then we would recommend different activities based on the time and weather that are
+                            nearby. For example,
+                            if it was near lunchtime, the app would display your next break with people that have breaks
+                            at the same time and
+                            recommend nearby restaurants to go to while on break.<br>
+                            <br>
+                            <strong>How It Works</strong><br>
+                            We used the Flutter framework to design the UI and the Firebase platform for the backend of
+                            the application.
+                            The user is able to connect to their account and add classes to their schedule. Once the
+                            class is added it is stored in the Firestore
+                            database. The data is retreived everytime the user logs in to their account.
+                            Adding a class is as simple as clicking the floating button at the bottom of the screen and
+                            filling out the data.
+                            Once added the class will be displayed on the schedule. The app the finds when your next
+                            break is going to be
+                            and displays it under the schedule. Followed by the recommendations of activities. We were
+                            unable to implement the connection
+                            between people in the 24 hour challenge but our team is planning to finish the app for a
+                            more complete look. If you'd like
+                            to take a look at the code you can click on <a target="_blank"
+                                href="https://github.com/bowe99/ConUHacksV-Flutter">this Github link.</a>
+                            <br>
+                            <br>
+                            <strong>Concepts Learned</strong><br>
+                            Database connections in Flutter <br>
+                            DateTime Widget and how to work with Time <br>
+                            Time management to deploy a prototype in a 24 hour challenge <br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="project_section">
+                <video class="mobile" controls muted loop>
+                    <source type="video/mp4" src="Ressources/ConU.mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <hr id="project_divider_line">
+    <!--Recipe Keeper-->
+    <div class="project_item">
+        <div class="left_section">
+            <ul>
+                <li>
+                    <div class="list_title"><strong>Mobile Application: Recipe Keeper (Flutter)</strong>
+                    </div>
+                    <div class="project_content">
+                        This app allows a user to look at differnet types of recipes while also filtering to suit
+                        vegetarian, vegan, lactose and gluten restrictions. While also allowing the user to keep track
+                        of favorite recipes.<br>
+                        <br>
+                        <strong>How It Works</strong><br>
+                        All recipes are split into categories where each recipe can have multiple categories.<br>
+                        <br>
+                        Once a category is selected it will go to a different screen with a list of different meals also
+                        allowing the user to select a recipe to be brought to a description of the meal with the recipe
+                        ingredients and the steps to complete the recipe. The user can then select the recipe to be
+                        stored as a favorit or unmark a recipe that has already been favorited.<br>
+                        <br>
+                        The user can also use the menu tab on the initial screen to go and set filters on the recipes
+                        that should be displayed. Such as vegeterian, vegan, lactose free and gluten free meals.<br>
+                        <br>
+                        To find the code for this project you can visit
+                        <a href="https://github.com/bowe99/Recipe-Keeper" target="_blank">
+                            this Github link</a>.
+                        <br>
+                        <br>
+                        <strong>Concepts Learned</strong><br>
+                        Screen Navigation<br>
+                        Moving Data through different screens<br>
+                        Named Routes, Unnamed Routes, Tabs and Drawers<br>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="project_section">
+            <video class='mobile' controls muted loop>
+                <source type="video/mp4" src="Ressources/RecipeKeeper.mp4">
+            </video>
+        </div>
+    </div>
+    <hr id="project_divider_line">
+    <!--Personal Finance Tracker-->
+    <div class="project_item">
+        <div class="left_section">
+            <ul>
+                <li>
+                    <div class="list_title"><strong>Mobile Application: Personal Finance Tracker (Flutter)</strong>
+                    </div>
+                    <div class="project_content">
+                        This app allows a user to track his personal expenses by keeping a log of all the expenses
+                        that have been made. It also displays a chart with spending from the last 7 days and displays
+                        which
+                        day of that week was the most expensive.<br>
+                        <br>
+                        <strong>How It Works</strong><br>
+                        The chart takes in all the transactions in the past 7 days and displays a colored bar over each
+                        day
+                        where the height is calculated as a percentage of all transactions for that specific date and is
+                        compared to the
+                        past weeks transactions.<br>
+                        <br>
 
-                            The list at the bottom is a simple infinite list that displays all the transactions that have been made.<br>
-                            <br>
-                            The app also is responsive when it comes to orientation, OS and Screen Size. If the phone is set to landscape,
-                            it will give the user the choice to either see the chart or the transaction list. If the phone is an Iphone it will use Cupertino styled Widgets
-                            and finally, the widgets are sized according to the screen size of any device.<br>
-                            <br>
-                            To find the code for this project you can visit 
-                            <a href="https://github.com/bowe99/Personal-Finance-Tracker" target="_blank">
-                                this Github link</a>. 
-                            <br>
-                            <br>
-                            <strong>Concepts Learned</strong><br>
-                            Responsiveness depending on: OS, Screen Size and Orientation <br>
-                            Widget, Element, Render tree links <br>
-                            Good Flutter Coding Practices <br>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="project_section">
-                <video class='mobile' controls muted loop>
-                    <source type="video/mp4" src="Ressources/Personal Finance.mp4">
-                </video>
-            </div>
+                        The list at the bottom is a simple infinite list that displays all the transactions that have
+                        been made.<br>
+                        <br>
+                        The app also is responsive when it comes to orientation, OS and Screen Size. If the phone is set
+                        to landscape,
+                        it will give the user the choice to either see the chart or the transaction list. If the phone
+                        is an Iphone it will use Cupertino styled Widgets
+                        and finally, the widgets are sized according to the screen size of any device.<br>
+                        <br>
+                        To find the code for this project you can visit
+                        <a href="https://github.com/bowe99/Personal-Finance-Tracker" target="_blank">
+                            this Github link</a>.
+                        <br>
+                        <br>
+                        <strong>Concepts Learned</strong><br>
+                        Responsiveness depending on: OS, Screen Size and Orientation <br>
+                        Widget, Element, Render tree links <br>
+                        Good Flutter Coding Practices <br>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <hr id="project_divider_line">
-        <!--To-Do List-->
-        <div class="project_item">
-            <div class="left_section">
-                <ul>
-                    <li>
-                        <div class="list_title"><strong>To-Do List Web Application (HTML, CSS, JavaScript)</strong>
-                        </div>
-                        <div class="project_content">
-                            Created a small applet that displays to-do list items that need to be done using HTML, CSS
-                            and JavaScript.<br>
-                            <br>
-                            <strong>How It Works</strong><br>
-                            First of all, I coded the input bar to always be in focus therefore, whoever is using the
-                            list does not need to click
-                            the input bar and there is also an event listener on the submit button that allows the user
-                            to press the return key
-                            and have the to-do item posted in the list. There are two things that can be done with an
-                            item, either recycle it(or delete)
-                            or mark it as done. If it is marked as done it will be moved to another list below the to-do
-                            list with all the completed tasks.
-                            To test it yourself you can click <a href="to-do-list.html">this link</a> or go to <a
-                                href="https://github.com/bowe99/To-Do-WebApp" target="_blank">this Github link</a> to
-                            see the code.<br>
-                            <br>
-                            <strong>Concepts Learned</strong><br>
-                            JavaScript Event Handlers<br>
-                            Changing HTML Text and Tags with JavaScript<br>
-                            JavaScript Functions
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="project_section">
-                <video controls muted loop>
-                    <source type="video/mp4" src="Ressources/ToDoAppDemo.mp4">
-                </video>
-            </div>
+        <div class="project_section">
+            <video class='mobile' controls muted loop>
+                <source type="video/mp4" src="Ressources/Personal Finance.mp4">
+            </video>
         </div>
-        
-        <hr id="project_divider_line">
-        <!--Personality Test-->
-        <div class="project_item">
-            <div class="left_section">
-                <ul>
-                    <li>
-                        <div class="list_title"><strong>Mobile Application: Personality Test (Flutter)</strong></div>
-                        <div class="project_content">
-                            Created a small application that gives the user to pick their favorite from three different
-                            questions
-                            and it will give them their personality based on their answers.<br>
-                            <br>
-                            <strong>How It Works</strong><br>
-                            Very simple app using a mix of Stateful and Stateless Widgets. Whenever the user presses a
-                            button,
-                            the answer is added to a list. Once the user answers all of the questions, the answers are
-                            passed through
-                            a switch case statement that constructs a sentence for the personality of the user. Once the
-                            sentence is
-                            constructed it is displayed on a new page and reveals the personality of the user. To find
-                            the code for this
-                            project you can visit <a href="https://github.com/bowe99/Personality-Test-App" target="_blank">this
-                                Github link</a>. <br>
-                            <br>
-                            <strong>Concepts Learned</strong><br>
-                            If/Else statements for Widgets <br>
-                            Basic Widget Structuring and Styling <br>
-                            Basic Debugging <br>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="project_section">
-                <video controls muted loop>
-                    <source type="video/mp4" src="Ressources/Personality Test.mp4">
-                </video>
-            </div>
+    </div>
+    <hr id="project_divider_line">
+    <!--To-Do List-->
+    <div class="project_item">
+        <div class="left_section">
+            <ul>
+                <li>
+                    <div class="list_title"><strong>To-Do List Web Application (HTML, CSS, JavaScript)</strong>
+                    </div>
+                    <div class="project_content">
+                        Created a small applet that displays to-do list items that need to be done using HTML, CSS
+                        and JavaScript.<br>
+                        <br>
+                        <strong>How It Works</strong><br>
+                        First of all, I coded the input bar to always be in focus therefore, whoever is using the
+                        list does not need to click
+                        the input bar and there is also an event listener on the submit button that allows the user
+                        to press the return key
+                        and have the to-do item posted in the list. There are two things that can be done with an
+                        item, either recycle it(or delete)
+                        or mark it as done. If it is marked as done it will be moved to another list below the to-do
+                        list with all the completed tasks.
+                        To test it yourself you can click <a href="to-do-list.html">this link</a> or go to <a
+                            href="https://github.com/bowe99/To-Do-WebApp" target="_blank">this Github link</a> to
+                        see the code.<br>
+                        <br>
+                        <strong>Concepts Learned</strong><br>
+                        JavaScript Event Handlers<br>
+                        Changing HTML Text and Tags with JavaScript<br>
+                        JavaScript Functions
+                    </div>
+                </li>
+            </ul>
         </div>
+        <div class="project_section">
+            <video controls muted loop>
+                <source type="video/mp4" src="Ressources/ToDoAppDemo.mp4">
+            </video>
+        </div>
+    </div>
+
+    <hr id="project_divider_line">
+    <!--Personality Test-->
+    <div class="project_item">
+        <div class="left_section">
+            <ul>
+                <li>
+                    <div class="list_title"><strong>Mobile Application: Personality Test (Flutter)</strong></div>
+                    <div class="project_content">
+                        Created a small application that gives the user to pick their favorite from three different
+                        questions
+                        and it will give them their personality based on their answers.<br>
+                        <br>
+                        <strong>How It Works</strong><br>
+                        Very simple app using a mix of Stateful and Stateless Widgets. Whenever the user presses a
+                        button,
+                        the answer is added to a list. Once the user answers all of the questions, the answers are
+                        passed through
+                        a switch case statement that constructs a sentence for the personality of the user. Once the
+                        sentence is
+                        constructed it is displayed on a new page and reveals the personality of the user. To find
+                        the code for this
+                        project you can visit <a href="https://github.com/bowe99/Personality-Test-App"
+                            target="_blank">this
+                            Github link</a>. <br>
+                        <br>
+                        <strong>Concepts Learned</strong><br>
+                        If/Else statements for Widgets <br>
+                        Basic Widget Structuring and Styling <br>
+                        Basic Debugging <br>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="project_section">
+            <video controls muted loop>
+                <source type="video/mp4" src="Ressources/Personality Test.mp4">
+            </video>
+        </div>
+    </div>
     </div>
     <div class="contact_container">
         <div class="section_title" id="contact">
