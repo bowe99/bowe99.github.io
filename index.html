@@ -158,94 +158,154 @@
             </div>
         </div>
         <hr id="project_divider_line">
-        <!--Chess-->
+        <!--Shopping App-->
         <div class="project_item">
             <div class="left_section">
                 <ul>
                     <li>
-                        <div class="list_title"><strong>Chess (Java)</strong></div>
-                        <div class="project_content">
-                            Created a chess game from scratch and implemented a full GUI.<br>
-                            <br>
-                            <strong>How It Works</strong><br>
-                            Everytime a player selects a piece, it displays all the different possible positions the
-                            piece can be moved taking into consideration
-                            all the restrictions such as, if the move you are trying to make puts you in check or if
-                            their is a piece in the way. Implemented using
-                            Java GUI code and all my code is available at <a href="https://github.com/bowe99/Chess-Game"
-                                target="_blank">this GitHub
-                                link.</a><br>
-                            <br>
-                            The video on the right is a demo of the features built in and some gameplay of the game.
-                            All the moves are being stored on the right column
-                            and the taken pieces are stored and displayed in the left column.<br>
-                            <br>
-                            <strong>Concepts Learned</strong><br>
-                            ImmutableLists and List Protection<br>
-                            Java GUI<br>
-                            Class Inheritance and Abstract Classes
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="project_section">
-                <video controls muted loop>
-                    <source type="video/mp4" src="Ressources/ChessDemo.mp4">
-                </video>
-            </div>
-        </div>
-        <hr id="project_divider_line">
-        <!--ConU Project-->
-        <div class="project_item">
-            <div class="left_section">
-                <ul>
-                    <li>
-                        <div class="list_title"><strong>(ConUHacks) 24-Hour Hackathon Project: Break Planner
-                                (Flutter)</strong>
+                        <div class="list_title"><strong>Shopping App (Flutter)</strong>
                         </div>
                         <div class="project_content">
-                            The purpose of this application was to create a platform for people to find activities to do
-                            during their school breaks.
-                            The main idea was for users to be able to connect with other people using the app and being
-                            able to find common breaks between
-                            them. Then we would recommend different activities based on the time and weather that are
-                            nearby. For example,
-                            if it was near lunchtime, the app would display your next break with people that have breaks
-                            at the same time and
-                            recommend nearby restaurants to go to while on break.<br>
+                            The purpose of this application was to learn how to use databases and how to connect them to
+                            an application. This application also served as an experiment to learn about providers and how
+                            to use and transfer information in different parts of the application. This app also implements 
+                            user authentification and animation of widgets. This app was built with the help of a Udemy 
+                            course created by Max Schwarzmüller.
+                            <br>
                             <br>
                             <strong>How It Works</strong><br>
-                            We used the Flutter framework to design the UI and the Firebase platform for the backend of
-                            the application.
-                            The user is able to connect to their account and add classes to their schedule. Once the
-                            class is added it is stored in the Firestore
-                            database. The data is retreived everytime the user logs in to their account.
-                            Adding a class is as simple as clicking the floating button at the bottom of the screen and
-                            filling out the data.
-                            Once added the class will be displayed on the schedule. The app the finds when your next
-                            break is going to be
-                            and displays it under the schedule. Followed by the recommendations of activities. We were
-                            unable to implement the connection
-                            between people in the 24 hour challenge but our team is planning to finish the app for a
-                            more complete look. If you'd like
+                            I used the Flutter framework to design the UI and the Firebase platform for the backend
+                            of the application. <br>
+                            <br>
+                            The first part of the building of this application was the use of Providers. This was a way 
+                            to share information throughout the entire application without having to pass information through
+                            the constructors of the widgets. This also removes the need for most stateful widgets as the Providers 
+                            rebuild application based on when information changes. <br>
+                            <br>
+                            The second part was using forms and user input. This includes input verification and using the data 
+                            submited to create new objects in the application. For this app we used forms for the addition of user
+                            products to be added to the shop.<br>
+                            <br>
+                            The next part consists of connecting the information from the app to a database. This application uses
+                            the Firebase real-time database and it stores the product information as well as the order information.<br>
+                            <br>
+                            I then implemented user authentification with Firebase. This includes auto-login where if the application 
+                            closes it will try and find an active login token and will automatically sign-in. We also modified the database
+                            to return user specific products. Meaning in the editting screen users can only delete and edit their own
+                            products.<br>
+                            <br>
+                            Finally, animations were added to some of the components of the application to make transitions feel more
+                            fluid and to add to user experience.<br>
+                            <br>
+                            If you'd like
                             to take a look at the code you can click on <a target="_blank"
-                                href="https://github.com/bowe99/ConUHacksV-Flutter">this Github link.</a>
+                                href="https://github.com/bowe99/Shopping-App">this Github link.</a>
                             <br>
                             <br>
                             <strong>Concepts Learned</strong><br>
-                            Database connections in Flutter <br>
-                            DateTime Widget and how to work with Time <br>
-                            Time management to deploy a prototype in a 24 hour challenge <br>
+                            State management<br>
+                            Asynchronous Functions<br>
+                            Storing information on the Device Memory<br>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="project_section">
                 <video class="mobile" controls muted loop>
-                    <source type="video/mp4" src="Ressources/ConU.mp4">
+                    <source type="video/mp4" src="Ressources/Shop-App.mp4">
                 </video>
             </div>
         </div>
+    </div>
+    <hr id="project_divider_line">
+    <!--Chess-->
+    <div class="project_item">
+        <div class="left_section">
+            <ul>
+                <li>
+                    <div class="list_title"><strong>Chess (Java)</strong></div>
+                    <div class="project_content">
+                        Created a chess game from scratch and implemented a full GUI.<br>
+                        <br>
+                        <strong>How It Works</strong><br>
+                        Everytime a player selects a piece, it displays all the different possible positions the
+                        piece can be moved taking into consideration
+                        all the restrictions such as, if the move you are trying to make puts you in check or if
+                        their is a piece in the way. Implemented using
+                        Java GUI code and all my code is available at <a href="https://github.com/bowe99/Chess-Game"
+                            target="_blank">this GitHub
+                            link.</a><br>
+                        <br>
+                        The video on the right is a demo of the features built in and some gameplay of the game.
+                        All the moves are being stored on the right column
+                        and the taken pieces are stored and displayed in the left column.<br>
+                        <br>
+                        <strong>Concepts Learned</strong><br>
+                        ImmutableLists and List Protection<br>
+                        Java GUI<br>
+                        Class Inheritance and Abstract Classes
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="project_section">
+            <video controls muted loop>
+                <source type="video/mp4" src="Ressources/ChessDemo.mp4">
+            </video>
+        </div>
+    </div>
+    <hr id="project_divider_line">
+    <!--ConU Project-->
+    <div class="project_item">
+        <div class="left_section">
+            <ul>
+                <li>
+                    <div class="list_title"><strong>(ConUHacks) 24-Hour Hackathon Project: Break Planner
+                            (Flutter)</strong>
+                    </div>
+                    <div class="project_content">
+                        The purpose of this application was to create a platform for people to find activities to do
+                        during their school breaks.
+                        The main idea was for users to be able to connect with other people using the app and being
+                        able to find common breaks between
+                        them. Then we would recommend different activities based on the time and weather that are
+                        nearby. For example,
+                        if it was near lunchtime, the app would display your next break with people that have breaks
+                        at the same time and
+                        recommend nearby restaurants to go to while on break.<br>
+                        <br>
+                        <strong>How It Works</strong><br>
+                        We used the Flutter framework to design the UI and the Firebase platform for the backend of
+                        the application.
+                        The user is able to connect to their account and add classes to their schedule. Once the
+                        class is added it is stored in the Firestore
+                        database. The data is retreived everytime the user logs in to their account.
+                        Adding a class is as simple as clicking the floating button at the bottom of the screen and
+                        filling out the data.
+                        Once added the class will be displayed on the schedule. The app the finds when your next
+                        break is going to be
+                        and displays it under the schedule. Followed by the recommendations of activities. We were
+                        unable to implement the connection
+                        between people in the 24 hour challenge but our team is planning to finish the app for a
+                        more complete look. If you'd like
+                        to take a look at the code you can click on <a target="_blank"
+                            href="https://github.com/bowe99/ConUHacksV-Flutter">this Github link.</a>
+                        <br>
+                        <br>
+                        <strong>Concepts Learned</strong><br>
+                        Database connections in Flutter <br>
+                        DateTime Widget and how to work with Time <br>
+                        Time management to deploy a prototype in a 24 hour challenge <br>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="project_section">
+            <video class="mobile" controls muted loop>
+                <source type="video/mp4" src="Ressources/ConU.mp4">
+            </video>
+        </div>
+    </div>
     </div>
     <hr id="project_divider_line">
     <!--Recipe Keeper-->
