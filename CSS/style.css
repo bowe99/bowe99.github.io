@@ -196,6 +196,7 @@
         padding: 0 40px 0 0;
         font-size: 18px;
         text-align: justify;
+        position: relative;
     }
 
     div.right_section {
@@ -279,8 +280,13 @@
     }
     
     #about_text{
+        padding-right: 20px;
         line-height: 30px;
         font-size: 20px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
 
 
